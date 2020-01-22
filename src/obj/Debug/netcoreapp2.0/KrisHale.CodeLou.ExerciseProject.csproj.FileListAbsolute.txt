@@ -1,0 +1,11 @@
+C:\Users\karis\desktop\source\Spring2020CSharp\src\bin\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.deps.json
+C:\Users\karis\desktop\source\Spring2020CSharp\src\bin\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.runtimeconfig.json
+C:\Users\karis\desktop\source\Spring2020CSharp\src\bin\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.runtimeconfig.dev.json
+C:\Users\karis\desktop\source\Spring2020CSharp\src\bin\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.dll
+C:\Users\karis\desktop\source\Spring2020CSharp\src\bin\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.pdb
+C:\Users\karis\desktop\source\Spring2020CSharp\src\obj\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.csprojAssemblyReference.cache
+C:\Users\karis\desktop\source\Spring2020CSharp\src\obj\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.csproj.CoreCompileInputs.cache
+C:\Users\karis\desktop\source\Spring2020CSharp\src\obj\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.AssemblyInfoInputs.cache
+C:\Users\karis\desktop\source\Spring2020CSharp\src\obj\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.AssemblyInfo.cs
+C:\Users\karis\desktop\source\Spring2020CSharp\src\obj\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.dll
+C:\Users\karis\desktop\source\Spring2020CSharp\src\obj\Debug\netcoreapp2.0\KrisHale.CodeLou.ExerciseProject.pdb
