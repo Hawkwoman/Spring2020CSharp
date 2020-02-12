@@ -7,23 +7,21 @@ namespace KrisHale.CodeLou.ExerciseProject
     {
         static void Main(string[] args)
         {
-            var continueRunning = "Y";
-            while (continueRunning == "Y")
+            var inputtingStudent = true;
+            while (inputtingStudent)
             {
                 InputStudent();
 
                 Console.WriteLine("Do you want to enter another student? (Y/N)");
-                continueRunning = Console.ReadLine();
+                inputtingStudent = Console.ReadLine().ToLower() == "y";
             }
-            Console.ReadKey();
+            
         }
 
 
-        static void InputStudent()
+        static Student InputStudent()
         {
-            Console.WriteLine("Hello World!");
             Console.WriteLine("Enter Student Id");
-
             var studentId = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter First Name");
             var studentFirstName = Console.ReadLine();
@@ -48,7 +46,10 @@ namespace KrisHale.CodeLou.ExerciseProject
             studentRecord.LastClassCompletedOn = lastCompletedOn;
             Console.WriteLine($"Student Id | Name |  Class "); ;
             Console.WriteLine($"{studentRecord.StudentId} | {studentRecord.FirstName} {studentRecord.LastName} | {studentRecord.ClassName} ");
+            Console.ReadKey();
+            return studentRecord;
         }
+    
     }
 }
 
