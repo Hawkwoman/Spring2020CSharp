@@ -113,3 +113,29 @@ namespace KrisHale.CodeLou.ExerciseProject
     }
 }
 
+
+//Challenge 3 sollution
+//
+//
+//
+// //
+// //
+// Class Program
+// {
+//     statis string _studentRepositoryPath = $"{AppDomain.CurrentDomain.BaseDirectory"}\\students.json";
+// 
+
+// static IList<student> studentList = file.Exists(_studentRepositoryPath) ? Read() : new List<Student>();
+
+// static async void Save()
+// {
+//     using (var file = file.CreateText(_studentRepositoryPath))
+//     {
+//         await file.WriteAsync(JsonSerializer.Serialize(studentsList));
+//     }
+// }
+
+// static IList<Student> Read() {
+//     return Json.Serializer.Deserialize<IList<student>>(File.ReadAllText(_studentRepositoryPath));
+// }
+
