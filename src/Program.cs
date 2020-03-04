@@ -5,13 +5,20 @@ using src;
 using System.IO;
 using System.Text.Json;
 
-namespace DaveWriteCode.CodeLou.ExerciseProject
+namespace KrisHale.CodeLou.ExerciseProject
 {
     class Program
     {
         //static List<Student> studentsList = new List<Student>();
         static string _studentRepositoryPath = $"{AppDomain.CurrentDomain.BaseDirectory}\\students.json"; 
         static List<Student> studentsList = File.Exists(_studentRepositoryPath) ? Read() : new List<Student>(); 
+        
+        //Read Method for the above Student List
+        static List<Student> Read() 
+        {
+            var serializedStudents = File.ReadAllText(_studentRepositoryPath);
+            return  JsonSerializer.Deserialize<List<Student>>(File.ReadAllText(_studentRepositoryPath));
+        }
         static void Main(string[] args)
         {
             var inputtingStudent = true;
@@ -34,14 +41,7 @@ namespace DaveWriteCode.CodeLou.ExerciseProject
                         inputtingStudent = false;
                         break;
                 }
-            }
-        }
-        //Read Method for the above Student List
-        static List<Student> Read() 
-        {
-            return  JsonSerializer.Deserialize<List<Student>>(File.ReadAllText(_studentRepositoryPath));
-        }
-
+            }}
         private static void DisplayStudents(IEnumerable<Student> students)
         {
             if (students.Any())
@@ -117,6 +117,14 @@ namespace DaveWriteCode.CodeLou.ExerciseProject
                 }
             }
             studentsList.Add(student);
+            Save();
+            
+        }
+
+        private static void Save()
+        {
+            var serializedStudents = JsonSerializer.Serialize(studentsList);
+            File.CreateText(_studentRepositoryPath).Write(serializedStudents);
         }
     }
 }
